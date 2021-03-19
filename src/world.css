@@ -583,7 +583,7 @@ body {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1999px) {
+@media screen and (min-width: 681px) and (max-width: 1500px) {
     .world {
         display: inline-flex;
     }
@@ -619,12 +619,6 @@ body {
         transform: scale(0.7);
         transform: rotate(5deg);
         opacity: 1;
-    }
-    #title {
-        display: none;
-    }
-    .character {
-        display: flex;
     }
     .character-equipment {
         height: 800px;
@@ -727,5 +721,383 @@ body {
     #weapon-slot,
     #offhand-slot {
         height: 200px;
+    }
+    .setItens {
+        width: 100%;
+        min-height: 750px;
+        background-color: rgb(187, 187, 187);
+        padding: 2%;
+        border-radius: 15px;
+        box-shadow: gray 0px 10px 10px 15px;
+        display: inline-block;
+        align-items: center;
+    }
+    .dungeon {
+        margin: 0 auto;
+        background-image: url("./img/world/torre.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 30%;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0)0 10px 10px;
+    }
+    .dungeon:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .taver {
+        margin: 0 auto;
+        background-image: url("./img/world/tavern.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 15%;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0)0 10px 10px;
+        margin-top: 1%;
+    }
+    .taver:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .duel {
+        margin: 0 auto;
+        background-image: url("./img/world/duel.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 15%;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .duel:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .bag {
+        margin: 0 auto;
+        background-image: url("./img/itens/bag.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 15%;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .bag:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .friend-list {
+        margin: 0 auto;
+        background-image: url("./img/world/friend-list.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 15%;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .friend-list:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 2001px) {
+    body {
+        text-align: left;
+    }
+    #title {
+        display: block;
+    }
+    .character {
+        display: block;
+    }
+    .taver {
+        width: 200px;
+        height: 200px;
+    }
+    h4 {
+        padding: 1%;
+        box-shadow: gray -6px 3px;
+        text-shadow: gray -3px 1px;
+        background-color: whitesmoke;
+        width: 450px;
+        max-height: 20px;
+        opacity: 0.5;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+    h4:active {
+        transform: scale(0.7);
+        transform: rotate(5deg);
+        opacity: 1;
+    }
+    .character-equipment {
+        height: 925px;
+        background-color: rgb(202, 202, 202);
+        border-radius: 15px;
+        box-shadow: rgb(129, 129, 129) 0 0 82px;
+        margin-left: 2%;
+        max-width: 800px;
+        display: inline-flex;
+        position: relative;
+    }
+    .character-equipment:hover {
+        box-shadow: rgba(143, 0, 0, 0.781) 0 0 50px;
+        animation: fundo-vermelho 2s;
+        animation-iteration-count: infinite;
+    }
+    .equip-left {
+        height: 95%;
+        width: 25%;
+        background-color: rgb(212, 211, 211);
+        border-radius: 15px;
+        margin-left: 1%;
+        margin-top: 1%;
+        padding: 12px 11px 12px 12px;
+    }
+    .character-display {
+        width: 570px;
+        height: 95%;
+        margin-top: 2%;
+        border-radius: 15px;
+        margin-left: 2%;
+        background-color: rgb(160, 160, 160);
+    }
+    .character-img {
+        width: 98%;
+        height: 98%;
+        padding: 1% 1% 1% 1%;
+        border-radius: 15px;
+    }
+    .relic,
+    .head,
+    .body,
+    .arms,
+    .waist,
+    .boots {
+        transform-style: preserve-3d;
+        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
+        padding: 4%;
+        height: 80px;
+        border: solid black 2px;
+        margin-top: 15%;
+        background-color: gray;
+        border-radius: 15px;
+        color: white;
+        opacity: 0.7;
+        display: flex;
+        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
+    }
+    .world {
+        display: inline;
+    }
+    .equip-right {
+        display: inline-flex;
+        height: 400px;
+        width: 400px;
+        margin-top: -8%;
+        margin-left: 90%;
+        margin-inline: 5%;
+        float: inline-end;
+    }
+    .main-weapon {
+        transform-style: preserve-3d;
+        height: 200px;
+        border: solid black 2px;
+        margin-top: 15%;
+        background-color: rgb(185, 185, 185);
+        border-radius: 25px;
+        color: white;
+        opacity: 0.9;
+        display: flex;
+        width: 50%;
+        margin-right: 5%;
+    }
+    .second-weapon {
+        transform-style: preserve-3d;
+        height: 200px;
+        border: solid black 2px;
+        margin-top: 15%;
+        background-color: rgb(185, 185, 185);
+        border-radius: 25px;
+        color: white;
+        opacity: 0.9;
+        display: flex;
+        width: 50%;
+        margin-left: 5%;
+    }
+    .main-weapon:hover,
+    .second-weapon:hover {
+        transition: all 1s ease;
+        animation: fundo-vermelho 2s;
+        opacity: 1;
+        box-shadow: rgba(140, 5, 0, 0.781) 0 0 80px;
+    }
+    #weapon-slot,
+    #offhand-slot {
+        height: 200px;
+    }
+    .setItens {
+        position: relative;
+        width: 50%;
+        min-height: 650px;
+        background-color: rgb(187, 187, 187);
+        padding: 2%;
+        border-radius: 15px;
+        box-shadow: gray 0px 10px 10px 15px;
+        display: block;
+        float: left;
+    }
+    .dungeon {
+        margin: 0 auto;
+        background-image: url("./img/world/torre.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 200px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0)0 10px 10px;
+    }
+    .dungeon:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .taver {
+        margin: 0 auto;
+        background-image: url("./img/world/tavern.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 150px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0)0 10px 10px;
+        margin-top: 1%;
+    }
+    .taver:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .duel {
+        margin: 0 auto;
+        background-image: url("./img/world/duel.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 150px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .duel:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .bag {
+        margin: 0 auto;
+        background-image: url("./img/itens/bag.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 150px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .bag:active {
+        transform: scale3d(0.7, 0.7, 1);
+    }
+    .friend-list {
+        margin: 0 auto;
+        background-image: url("./img/world/friend-list.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 80%;
+        height: 150px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        border: solid rgb(196, 196, 196) 4px;
+        color: white;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: rgb(0, 0, 0) 0 10px 10px;
+        margin-top: 1%;
+    }
+    .friend-list:active {
+        transform: scale3d(0.7, 0.7, 1);
     }
 }
