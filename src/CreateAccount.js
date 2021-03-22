@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import "./App.css";
-import { Redirect } from 'react-router-dom'
-import {NewUser} from "./AjaxUser.js";
+import { Redirect } from 'react-router-dom';
 
 const CreateAccount = () => {
+
+
+
     const [sendRegistration, setNeedRegistration] = useState(false)
     const [checkEmail2, setCheckEmail2] = useState(false)
     const [checkEmail1, setCheckEmail1] = useState(false)
@@ -11,14 +13,33 @@ const CreateAccount = () => {
     const [checkPass2, setCheckPass2] = useState(false)
     const [checkPass1, setCheckPass1] = useState(false)
 
-    const Registration = () => {
+     function Registration() {
         console.log(document.getElementById("email").value + " values " + document.getElementById("pass").value);
-        let fname = document.getElementById("email").value;
+        let fname = document.getElementById("fname").value;
         let pass = document.getElementById("pass").value;
         let email = document.getElementById("email").value;
+        //https://webhook.site/9263114e-3970-4a55-a1a3-1f2304e1d514
+            try {
 
-        NewUser({"name": fname, "password":pass, "email": email });
-        //return <Redirect to="/" />
+                let result =  fetch('http://localhost:5000/cadastro', {
+                    method: 'post',
+                    mode: 'no-cors',
+                    headers:{
+                        'Accept': 'application/json',
+                        'content-type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: fname,
+                        password: pass,
+                        email: email
+                    })
+                });
+
+                console.log("enviou o json");
+            } catch (e) {
+                console.log(e);
+            }
+            return <Redirect to="/" />
     }
     const checkConditions = () => {
         if (checkEmail2 != checkEmail1) {
@@ -61,17 +82,17 @@ const CreateAccount = () => {
                         <p>Full Name</p>
                         <input className="registration-input" placeholder="tipe in here" id="fname" type="text" />
                         <p>Email</p>
-                        <input className="registration-input" onBlur={() => setCheckEmail1(document.getElementById("email").value)} id="email" type="e-mail" />
+                        <input className="registration-input" onChange={() => setCheckEmail1(document.getElementById("email").value)} id="email" type="e-mail" />
                         <p>Re-enter your e-mail below there</p>
-                        <input className="registration-input" onBlur={() => setCheckEmail2(document.getElementById("email2").value)} id="email2" type="e-mail" />
+                        <input className="registration-input" onChange={() => setCheckEmail2(document.getElementById("email2").value)} id="email2" type="e-mail" />
                         <p id="email3" className="smallp" >teste</p>
                         <p>Password</p>
-                        <input className="registration-input" id="pass" type="password" onBlur={() => setCheckPass1(document.getElementById("pass").value)} />
+                        <input className="registration-input" id="pass" type="password" onChange={() => setCheckPass1(document.getElementById("pass").value)} />
                         <p>Re-enter your password below there</p>
-                        <input className="registration-input" id="pass2" type="password" onBlur={() => setCheckPass2(document.getElementById("pass2").value)} />
+                        <input className="registration-input" id="pass2" type="password" onChange={() => setCheckPass2(document.getElementById("pass2").value)} />
                         <p id="pass4" className="smallp"></p>
                         <br /><br />
-                        <button onClick={() => {setNeedRegistration(true)}}>SEND REGISTRATION</button>
+                        <button onClick={() => setNeedRegistration(true)}>SEND REGISTRATION</button>
                     </form>
                 </div>
             </div>

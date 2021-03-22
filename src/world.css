@@ -881,8 +881,9 @@ body {
         box-shadow: rgb(129, 129, 129) 0 0 82px;
         margin-left: 2%;
         max-width: 800px;
-        display: inline-flex;
+        display: flex;
         position: relative;
+        margin-top: 1%;
     }
     .character-equipment:hover {
         box-shadow: rgba(143, 0, 0, 0.781) 0 0 50px;
@@ -935,6 +936,7 @@ body {
         display: inline;
     }
     .equip-right {
+        transform-style: preserve-3d;
         display: inline-flex;
         height: 400px;
         width: 400px;
@@ -944,7 +946,6 @@ body {
         float: inline-end;
     }
     .main-weapon {
-        transform-style: preserve-3d;
         height: 200px;
         border: solid black 2px;
         margin-top: 15%;
@@ -957,7 +958,6 @@ body {
         margin-right: 5%;
     }
     .second-weapon {
-        transform-style: preserve-3d;
         height: 200px;
         border: solid black 2px;
         margin-top: 15%;
@@ -976,6 +976,18 @@ body {
         opacity: 1;
         box-shadow: rgba(140, 5, 0, 0.781) 0 0 80px;
     }
+    .main-weapon:hover {
+        transform: scale3d(2, 1.7, 0.1);
+        transition: all 1s ease-in;
+        margin-top: -10%;
+        z-index: 10;
+    }
+    .second-weapon:hover {
+        transform: scale3d(2, 1.7, 0.1);
+        transition: all 1s ease-in;
+        margin-top: -10%;
+        z-index: 10;
+    }
     #weapon-slot,
     #offhand-slot {
         height: 200px;
@@ -990,6 +1002,7 @@ body {
         box-shadow: gray 0px 10px 10px 15px;
         display: block;
         float: left;
+        margin-top: 1%;
     }
     .dungeon {
         margin: 0 auto;
@@ -1099,5 +1112,9 @@ body {
     }
     .friend-list:active {
         transform: scale3d(0.7, 0.7, 1);
+    }
+    #weapon-slot,
+    #offhand-slot {
+        position: relative;
     }
 }
