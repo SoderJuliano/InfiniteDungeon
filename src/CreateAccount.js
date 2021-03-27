@@ -33,9 +33,15 @@ const CreateAccount = () => {
                         password: pass,
                         email: email
                     })
-                });
-
-                console.log("enviou o json");
+                }).then((response)=>response.json())
+                .then((responseJson)=>
+                {
+            
+                   this.setState({
+                       data:responseJson.token
+                   })
+                   console.log(this.state.data)
+                })
             } catch (e) {
                 console.log(e);
             }
