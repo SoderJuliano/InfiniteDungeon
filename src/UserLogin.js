@@ -4,26 +4,50 @@ import { Redirect } from 'react-router-dom'
 
 const UserLogin = () => {
 
-   async function loginJson(){
-    const recipeUrl = 'http://localhost:5000/login';
-    const postBody = {
-        name: document.getElementById("nameInput").value,
-            password: document.getElementById("pass").value
-    };
-    const requestMetadata = {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(postBody)
-    };
+    async function  loginJson(){
 
-   await fetch(recipeUrl, requestMetadata)
-        .then(res => res.json())
-        .then(recipes => {
-            console.log(recipes)
-        });
+        try {
+            const recipeUrl = 'http://localhost:5000/login';
+            const postBody = {
+                name: document.getElementById("nameInput").value,
+                    password: document.getElementById("pass").value
+            };
+            const requestMetadata = {
+                dataType: 'json',
+                method: 'POST',
+                mode:'no-cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(postBody)
+            };
+                fetch(recipeUrl, requestMetadata)
+                .then(response => response.json())
+                .then(value => console.log(value))
+                        
+          /*  fetch('http://localhost:5000/login', {
+                mode:'no-cors',
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                name: document.getElementById("nameInput").value,
+                password: document.getElementById("pass").value,
+              })
+            })
+            .then(async function (response, err) {
+                if(err){
+                    console.log(err)
+                }
+                    const data =await response.json();
+                    console.log(data);
+                })
+          */
+        } catch (error) {
+            console.log(error)
+        }
+
 }
         
     const [getAccount, setNeedAccount] = useState(false)
