@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 .App {
     text-align: center;
 }
@@ -57,7 +57,7 @@ body {
     display: flex;
     justify-content: center;
     min-height: 960px;
-    font-family: 'Lobster', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 @keyframes bounce {
@@ -117,7 +117,7 @@ body {
 
 input {
     text-align: center;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     background-color: transparent;
     padding: 5%;
     border-radius: 10px;
@@ -132,7 +132,7 @@ input:after {
 }
 
 h1 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     font-weight: bolder;
     text-shadow: 2px 10px gray;
 }
@@ -142,7 +142,7 @@ h2 {
 }
 
 #login-bnt {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     border-radius: 25px;
     box-shadow: rgb(168, 166, 165) 1px 2px 12px 1px;
     text-shadow: gray 1px 2px 12px 1px;
@@ -204,7 +204,7 @@ h2 {
     margin: 2% 2% 2% 2%;
     animation: fadein 2s;
     -webkit-animation: fadein 2s;
-    font-family: 'Lobster', cursive;
+    font-family: 'New Tegomin', serif;
     border: solid black 2px;
 }
 
@@ -242,7 +242,7 @@ h2 {
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 5%;
-    font-family: 'Lobster', cursive;
+    font-family: 'New Tegomin', serif;
 }
 
 .character-creation {
@@ -265,13 +265,13 @@ h2 {
 }
 
 .botton-details {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     display: inline-flex;
 }
 
 .level-span {
     font-size: 50px;
-    font-family: 'Lobster', cursive;
+    font-family: 'New Tegomin', serif;
     border-radius: 100%;
     background-color: red;
     color: white;
@@ -301,7 +301,7 @@ h2 {
 }
 
 button {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     border-radius: 10px;
     padding: 4%;
     border: none;
@@ -362,10 +362,6 @@ button {
     margin-top: 4%;
 }
 
-button:active {
-    padding-right: 10%;
-}
-
 input {
     padding: 2%;
 }
@@ -382,4 +378,75 @@ input {
     .main-div-body {
         min-height: 1360px;
     }
+}
+
+@media screen and (min-width:1000px) {
+    .mainleft {
+        margin-top: 200px;
+        margin-left: 2%;
+        width: 15%;
+        height: 550px;
+        max-height: 700px;
+    }
+    .maincenter {
+        align-self: center;
+        height: 700px;
+        display: inline-block;
+        margin: 0 auto;
+        width: 40%;
+        margin-top: -800px;
+    }
+    .main {
+        display: flex;
+    }
+}
+
+.mainleft {
+    background: rgba(221, 221, 221, 0.123);
+    padding: 2%;
+    text-align: justify;
+    min-width: 180px;
+}
+
+.title {
+    text-align: left;
+}
+
+.circle {
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0 auto;
+    border: solid 2px orange;
+    width: 20%;
+    height: 50px;
+}
+
+.classtop {
+    padding: 2%;
+    display: flex;
+}
+
+.main {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    width: cover;
+    background-size: 100%;
+    min-height: 1900px;
+    margin: -10% 0% 0% 0%;
+    padding: 2%;
+    font-family: 'New Tegomin', serif;
+}
+
+#titledesciption {
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+button:active {
+    transform: scale(0.7);
+}
+
+.char {
+    width: cover;
+    height: 70%;
 }

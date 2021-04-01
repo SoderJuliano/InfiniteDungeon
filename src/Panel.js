@@ -11,6 +11,9 @@ const Panel = () => {
 
     const [needLoading, setNeedLoading] = useState(false)
     const [level, setLevel] = useState(1);
+    const [player, setPlayer] = useState(sessionStorage.getItem("user_name"));
+
+
     const loading = () => {
         return (<div>
              <BoxLoading  />
@@ -23,7 +26,7 @@ const Panel = () => {
             <div className="panel-account">
                 <h1>Infinite Dungeon</h1>
                 <div className="panel-head">
-                    <h2>Your Account level are </h2><div className="level-span">1</div>
+                   <h2>{player} Account level </h2><div className="level-span">1</div>
                 </div>
                 <div className="character-panel">
                     <div className="character-select">

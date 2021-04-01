@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 .world {
     background-color: rgb(196, 196, 196);
     background-position: center;
     background-size: cover;
     background-image: none;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'New Tegomin', serif;
     display: block;
     align-items: center;
     text-align: center;

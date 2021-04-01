@@ -33,7 +33,7 @@ const CharacterCreation = () => {
                     <div className="card-content">
                         <h3>Warrior<GiSwordsPower size="30px" /></h3>
                         <p>The warriors are know as the best fighers and the best tankers.</p>
-                        <p>The warriors are the master of battles in dungels and pvps, using melee weapons.</p>
+                        <p>The warriors are the master of battles in dungeons and pvps, using melee weapons.</p>
                         
                     </div>
                 </div>
@@ -54,9 +54,9 @@ const CharacterCreation = () => {
     
     const render = () => {
 
-        if(needRender==true){ console.log("im here")
+        if(needRender==true){ 
             return(details());
-        }else if(card==true){ console.log("im here")
+        }else if(card==true){ 
             return(details2());
         }else{
             return(main());

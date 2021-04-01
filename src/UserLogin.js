@@ -22,18 +22,12 @@ const UserLogin = () => {
                 body: JSON.stringify(postBody)
             };
             fetch(recipeUrl, requestMetadata)
-                .then((response) => {
-                    response.text()
-                        .then((text) => {
-                            if(text){
-                               JSON.parse(text)
-                            }else{}
-                        })
-                })
+                .then( (response) => {
+                   return response.json();
+                    })
                 .then((json) => {
-                    console.log(json)
-                    // localStorage.setItem("user_name", JSON.parse(text).user_name);
-                    // console.log(localStorage.getItem("user_name"))
+                    sessionStorage.setItem("user_name", json.user_name)
+                    json ?  setGotRigthLogin(true) : getAccount(true)
 
                 }).catch(error => console.log('Oops, error:', error))
 
@@ -43,9 +37,13 @@ const UserLogin = () => {
 
     }
 
+    const [loginSuccessFull, setGotRigthLogin] = useState(false)
     const [getAccount, setNeedAccount] = useState(false)
     const goToCreateAccount = () => {
         return <Redirect to="/CreateAccount" />
+    }
+    const goToPanel = () =>{ 
+        return <Redirect to="/panel" /> 
     }
     const [isLogged, setIsLogged] = useState(false)
     const loggedComponent = () => {
@@ -72,6 +70,8 @@ const UserLogin = () => {
     const render = () => {
         if (getAccount == true) {
             return (goToCreateAccount());
+        }else if(loginSuccessFull){
+            return goToPanel();
         } else {
             return (
                 isLogged ? loggedComponent() : login()
