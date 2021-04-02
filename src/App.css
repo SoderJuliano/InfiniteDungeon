@@ -125,10 +125,12 @@ input {
     border-right: none;
     border-bottom: solid gray 1px;
     border-left: solid black 2px;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 input:after {
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.116);
 }
 
 h1 {
@@ -138,7 +140,7 @@ h1 {
 }
 
 h2 {
-    text-shadow: 2px 2px #FF0000;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
 }
 
 #login-bnt {
@@ -399,6 +401,41 @@ input {
     .main {
         display: flex;
     }
+    .mainright {
+        float: right;
+        min-width: 180px;
+        width: 25%;
+        height: 550px;
+        max-height: 700px;
+        background-color: bisque;
+        display: flex;
+        margin-top: 200px;
+        margin-left: 2%;
+    }
+    .first {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        border: solid 2px orange;
+        border-radius: 50%;
+    }
+    .strategist {
+        width: 100%;
+    }
+    .second {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        border: solid 2px orange;
+        border-radius: 50%;
+    }
+    .tird {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        border: solid 2px orange;
+        border-radius: 50%;
+    }
 }
 
 .mainleft {
@@ -416,10 +453,9 @@ input {
     border-radius: 50%;
     text-align: center;
     margin: 0 auto;
-    margin-top: 0 auto;
+    padding: 1%;
     border: solid 2px orange;
     width: 20%;
-    height: 50px;
 }
 
 .classtop {
@@ -446,7 +482,64 @@ button:active {
     transform: scale(0.7);
 }
 
+.mainright {
+    float: right;
+    min-width: 180px;
+    height: 550px;
+    max-height: 700px;
+    background-color: bisque;
+    display: block;
+    margin-top: 200px;
+    margin-left: 2%;
+    background: rgba(221, 221, 221, 0.123);
+    padding: 2%;
+}
+
+.classechoosen {
+    justify-content: space-between;
+    display: flex;
+}
+
+#heroname {
+    width: 100%;
+}
+
+#c2,
+#c3 {
+    display: none;
+    animation: mymove 1s;
+}
+
+#c1 {
+    width: 90%;
+    height: 90%;
+    animation: mymove 1s;
+}
+
+.second:active,
+.first:active,
+.tird:active {
+    transform: scale(0.7);
+}
+
 .char {
-    width: cover;
-    height: 70%;
+    width: 100%;
+    min-height: 500px;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.charTransition {
+    max-width: 45%;
+    height: 550px;
+}
+
+@keyframes mymove {
+    from {
+        width: 0%;
+        height: 0%;
+    }
+    to {
+        width: 100%;
+        height: 100%;
+    }
 }

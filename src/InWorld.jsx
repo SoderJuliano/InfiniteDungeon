@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./world.css";
-import characterFirst from "./img/guerreiro.jpg";
+import characterFirst from "./img/warriorpaint1.png";
 import { GiVikingHead } from "react-icons/gi";
 import { GiTrenchBodyArmor } from "react-icons/gi";
 import { GiGloves } from "react-icons/gi";
