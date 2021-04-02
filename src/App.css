@@ -392,9 +392,10 @@ input {
     }
     .maincenter {
         align-self: center;
+        align-content: center;
+        text-align: center;
         height: 700px;
         display: inline-block;
-        margin: 0 auto;
         width: 40%;
         margin-top: -800px;
     }
@@ -436,13 +437,16 @@ input {
         border: solid 2px orange;
         border-radius: 50%;
     }
+    .char {
+        margin-left: 50%;
+    }
 }
 
 .mainleft {
     background: rgba(221, 221, 221, 0.123);
     padding: 2%;
     text-align: justify;
-    min-width: 180px;
+    min-width: 250px;
 }
 
 .title {
