@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ApexCharts from 'apexcharts';
 import Chart from "react-apexcharts";
-
+// faz um grafico em forma de radar
 class App extends Component {
     constructor(props) {
       super(props);
