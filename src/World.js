@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 
-
+// esta será uma página de carregamento do jogo
 const TransitionWorld = ()=>{
     const goToWorld = () => {
         return <Redirect to="/InWorld" />

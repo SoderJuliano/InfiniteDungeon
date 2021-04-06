@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ApexCharts from 'apexcharts';
 import Chart from "react-apexcharts";
-
+// componente que mostra um gráfico de poderes
 class App2 extends Component {
     constructor(props) {
       super(props);

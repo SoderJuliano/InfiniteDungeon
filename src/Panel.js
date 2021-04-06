@@ -6,7 +6,7 @@ import { BoxLoading  } from 'react-loadingg';
 import {TransitionWorld} from "./World";
 import mp3 from "./y2.mp3";
 
-  
+  // seleção de card
 const Panel = () => {
 
     const [needLoading, setNeedLoading] = useState(false)
