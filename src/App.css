@@ -310,16 +310,6 @@ button {
     box-shadow: rgb(134, 116, 136) -6px 4px;
 }
 
-.world {
-    background-image: url("./img/world/world.jpg");
-    min-width: 1980px;
-    min-height: 1080px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-}
-
 .registration {
     color: white;
 }

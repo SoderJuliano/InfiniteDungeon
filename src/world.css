@@ -1,24 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
 .world {
-    background-color: rgb(196, 196, 196);
-    background-position: center;
-    background-size: cover;
-    background-image: none;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     font-family: 'New Tegomin', serif;
     display: block;
-    align-items: center;
-    text-align: center;
-    align-content: center;
-}
-
-body {
-    background-color: rgb(196, 196, 196);
-    background-position: center;
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
     background-size: cover;
-    background-image: none;
+    min-height: 1900px;
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1000px) {
     h4 {
         text-align: left;
         padding: 1%;
@@ -38,169 +29,50 @@ body {
         opacity: 1;
     }
     .setItens {
-        width: 65%;
-        min-height: 750px;
-        background-color: whitesmoke;
+        width: 10%;
+        min-height: 500px;
+        height: 650px;
         padding: 1%;
-        border-radius: 15px;
-        opacity: 0.75;
-        box-shadow: gray 0px 10px 10px 15px;
         margin-left: 2%;
         margin-right: 2%;
-        display: flex;
+        display: grid;
+        position: fixed;
     }
     .dungeon {
-        background-image: url("./img/world/torre.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 37%;
-        height: 700px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: solid rgb(255, 123, 0) 4px;
+        color: black;
         text-align: center;
-        overflow: hidden;
-        transform: scale(0.9, 0.7);
-        margin-top: -8.5%;
-        margin-left: -2%;
-        box-shadow: rgb(0, 0, 0) 10px 10px;
+        float: left;
+        margin: 0 auto;
+        box-shadow: rgb(77, 77, 77)0 10px 10px, rgb(185, 184, 184)0 10px 10px;
+    }
+    .iconD {
+        width: 100%;
+        margin: 0 auto;
     }
     .dungeon:active {
-        margin-left: -0.5%;
-        margin-top: -8%;
-        box-shadow: rgb(0, 0, 0) 1px 1px;
-    }
-    .taver {
-        background-image: url("./img/world/tavern.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 40%;
-        height: 740px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        transform: scale(0.9, 0.5);
-        margin-top: -8%;
-        margin-left: 25%;
-        position: absolute;
-        box-shadow: rgb(0, 0, 0) 10px 10px;
-    }
-    .taver:active {
-        margin-left: 25.5%;
-        margin-top: -7.5%;
-        box-shadow: rgb(0, 0, 0) 1px 1px;
-    }
-    .duel {
-        background-image: url("./img/world/duel.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 20%;
-        height: 200px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        position: absolute;
-        margin-top: 23.5%;
-        margin-left: 44%;
-        box-shadow: rgb(0, 0, 0) 10px 10px;
-    }
-    .duel:active {
-        margin-left: 44.5%;
-        margin-top: 24%;
-        box-shadow: rgb(0, 0, 0) 1px 1px;
-    }
-    .bag {
-        background-image: url("./img/itens/bag.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 17%;
-        height: 200px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 10px 10px;
-        position: absolute;
-        margin-top: 23.5%;
-        margin-left: 0%;
-    }
-    .bag:active {
-        margin-left: 0.5%;
-        margin-top: 24%;
-        box-shadow: rgb(0, 0, 0) 1px 1px;
-    }
-    .friend-list {
-        background-image: url("./img/world/friend-list.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 20%;
-        height: 200px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        position: absolute;
-        margin-top: 23.5%;
-        margin-left: 20%;
-        box-shadow: rgb(0, 0, 0) 10px 10px;
-    }
-    .friend-list:active {
-        margin-left: 20.5%;
-        margin-top: 24%;
-        box-shadow: rgb(0, 0, 0) 1px 1px;
+        transform: scale(0.7);
     }
     .character {
         display: flex;
     }
     .character-equipment {
-        width: 550px;
-        height: 800px;
-        background-color: rgb(202, 202, 202);
-        position: absolute;
-        margin-left: 70%;
-        margin-top: -36.5%;
+        width: 50%;
+        max-width: 950px;
+        max-height: 500px;
         border-radius: 15px;
-        box-shadow: rgb(129, 129, 129) 0 0 82px;
         display: flex;
-    }
-    .character-equipment:hover {
-        box-shadow: rgba(143, 0, 0, 0.781) 0 0 50px;
-        animation: fundo-vermelho 2s;
-        animation-iteration-count: infinite;
+        margin: 0 auto;
     }
     .equip-left {
-        height: 95%;
+        height: 200px;
         width: 25%;
-        background-color: rgb(212, 211, 211);
         border-radius: 15px;
         margin-left: 1%;
-        margin-top: 2%;
+        margin-bottom: 10%;
         padding: 12 11 12 12;
     }
     .character-display {
@@ -209,143 +81,78 @@ body {
         border-radius: 15px;
         margin-top: 2%;
         margin-left: 2%;
-        background-color: rgb(160, 160, 160);
+        margin: 0 auto;
     }
     .character-img {
         width: 98%;
         height: 98%;
+        max-height: 500px;
+        max-width: 400px;
+        align-items: center;
+        align-content: center;
+        margin: 0 auto;
         padding: 1% 1% 1% 1%;
         border-radius: 15px;
+        margin: 0 auto;
     }
-    .head {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 2%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
+    .under {
         display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
+        width: 50%;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .blockElements {
+        display: block;
+        align-items: center;
+        align-content: center;
     }
     .body {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
+        height: 100px;
+        width: 100px;
+        border: solid orange 2px;
         background-color: gray;
-        border-radius: 15px;
+        border-radius: 50%;
         color: white;
-        opacity: 0.7;
         display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .arms {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .boots {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .waist {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .relic {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
+        box-shadow: 0 10px 8px rgba(14, 21, 47, 0.25);
+        margin: 0 auto;
     }
     .equip-right {
         display: block;
         height: 500px;
         width: 500px;
-        margin-left: 92%;
-        margin-top: -39%;
-        position: absolute;
-        transform-style: preserve-3d;
-        transform: rotateX(45deg);
-        display: block;
     }
     .main-weapon {
-        transform-style: preserve-3d;
-        transform: rotateX(10deg) rotateY(-30deg);
         padding: 1%;
-        height: 400px;
-        border: solid black 2px;
+        height: 100px;
+        border: solid orange 2px;
         margin-top: 15%;
-        background-color: gray;
-        border-radius: 25px;
+        background-color: rgba(155, 155, 155, 0.24);
         color: white;
-        opacity: 0.9;
         display: flex;
-        width: 130px;
+        width: 100px;
+        border-radius: 50%;
     }
     .second-weapon {
-        transform-style: preserve-3d;
-        transform: rotateX(10deg) rotateY(-30deg);
-        height: 400px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 25px;
+        height: 100px;
+        border: solid orange 2px;
+        margin-top: 37%;
+        background-color: rgba(155, 155, 155, 0.24);
         color: white;
         opacity: 0.9;
         display: flex;
-        width: 130px;
+        width: 100px;
+        border-radius: 50%;
     }
     .main-weapon:hover,
     .second-weapon:hover {
-        transform: scale3d(2.2, 1.4, 0.1);
+        transform: scale3d(2.2, 2, 0.11);
         transition: all 1s ease;
         margin-left: -100px;
         animation: fundo-vermelho 2s;
         opacity: 1;
         box-shadow: rgba(140, 5, 0, 0.781) 0 0 80px;
+        background-color: gray;
     }
 }
 
@@ -359,12 +166,39 @@ body {
     font-size: smaller;
 }
 
-.head:hover #helnet-span,
+.body:hover #helnet-span,
 .body:hover #body-span,
-.arms:hover #arms-span,
-.boots:hover #boots-span,
-.waist:hover #belt-span,
-.relic:hover #relic-span {
+.body:hover #arms-span,
+.body:hover #boots-span,
+.body:hover #belt-span,
+.body:hover #relic-span {
+    display: block;
+}
+
+.mainweaponinfo,
+.mainweaponinfo2 {
+    display: none;
+    width: 400px;
+    height: 500px;
+    margin-left: 10%;
+    position: absolute;
+    text-align: justify;
+}
+
+.mainweaponinfo2 {
+    display: none;
+    width: 400px;
+    height: 500px;
+    margin-left: 40%;
+    position: absolute;
+    text-align: justify;
+}
+
+.equip-right:hover .mainweaponinfo {
+    display: block;
+}
+
+.equip-left:hover .mainweaponinfo2 {
     display: block;
 }
 
@@ -374,7 +208,7 @@ body {
 .body:hover,
 .waist:hover,
 .relic:hover {
-    box-shadow: -20px 8px rgba(143, 0, 0, 0.781);
+    box-shadow: 0 10px 8px rgba(172, 172, 172, 0.781);
 }
 
 @keyframes fundo-vermelho {
@@ -440,14 +274,10 @@ body {
 #weapon-slot,
 #offhand-slot {
     background-size: cover;
-    height: 350px;
-    width: 100%;
-    background-repeat: no-repeat;
+    width: 90%;
     opacity: 1;
-    position: absolute;
     overflow: hidden;
     background-position: center;
-    transform: scale(1);
     display: block;
 }
 
@@ -561,7 +391,7 @@ body {
         transform-style: preserve-3d;
         height: 200px;
         border: solid black 2px;
-        margin-top: 15%;
+        margin-top: 37%;
         background-color: rgb(185, 185, 185);
         border-radius: 25px;
         color: white;
@@ -583,538 +413,10 @@ body {
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1500px) {
-    .world {
-        display: inline-flex;
-    }
-    #title {
-        display: block;
-    }
-    .character {
-        display: block;
-    }
-    .setItens {
-        display: block;
-        width: 600px;
-        height: 600px;
-        background-color: gray;
-    }
-    .taver {
-        width: 200px;
-        height: 200px;
-    }
-    h4 {
-        padding: 1%;
-        box-shadow: gray -6px 3px;
-        text-shadow: gray -3px 1px;
-        background-color: whitesmoke;
-        width: 450px;
-        max-height: 20px;
-        opacity: 0.5;
-        border-radius: 15px;
-        margin: 0 auto;
-        margin-top: 1%;
-    }
-    h4:active {
-        transform: scale(0.7);
-        transform: rotate(5deg);
-        opacity: 1;
-    }
-    .character-equipment {
-        height: 800px;
-        background-color: rgb(202, 202, 202);
-        border-radius: 15px;
-        box-shadow: rgb(129, 129, 129) 0 0 82px;
-        margin: 0 auto;
-        max-width: 800px;
-    }
-    .character-equipment:hover {
-        box-shadow: rgba(143, 0, 0, 0.781) 0 0 50px;
-        animation: fundo-vermelho 2s;
-        animation-iteration-count: infinite;
-    }
-    .equip-left {
-        height: 95%;
-        width: 25%;
-        background-color: rgb(212, 211, 211);
-        border-radius: 15px;
-        margin-left: 1%;
-        margin-top: 4%;
-        padding: 12px 11px 12px 12px;
-    }
-    .character-display {
-        margin-top: -777px;
-        width: 570px;
-        height: 95%;
-        border-radius: 15px;
-        margin-left: 28%;
-        background-color: rgb(160, 160, 160);
-    }
-    .character-img {
-        width: 98%;
-        height: 98%;
-        padding: 1% 1% 1% 1%;
-        border-radius: 15px;
-    }
-    .relic,
-    .head,
-    .body,
-    .arms,
-    .waist,
-    .boots {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .world {
-        display: inline;
-    }
-    .equip-right {
-        display: inline-flex;
-        height: 400px;
-        width: 80%;
-        margin-top: -5%;
-        margin-inline: 5%;
-    }
-    .main-weapon {
-        transform-style: preserve-3d;
-        height: 200px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: rgb(185, 185, 185);
-        border-radius: 25px;
-        color: white;
-        opacity: 0.9;
-        display: flex;
-        width: 50%;
-        margin-right: 5%;
-    }
-    .second-weapon {
-        transform-style: preserve-3d;
-        height: 200px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: rgb(185, 185, 185);
-        border-radius: 25px;
-        color: white;
-        opacity: 0.9;
-        display: flex;
-        width: 50%;
-        margin-left: 5%;
-    }
-    .main-weapon:hover,
-    .second-weapon:hover {
-        transition: all 1s ease;
-        animation: fundo-vermelho 2s;
-        opacity: 1;
-        box-shadow: rgba(140, 5, 0, 0.781) 0 0 80px;
-    }
-    #weapon-slot,
-    #offhand-slot {
-        height: 200px;
-    }
-    .setItens {
-        width: 100%;
-        min-height: 750px;
-        background-color: rgb(187, 187, 187);
-        padding: 2%;
-        border-radius: 15px;
-        box-shadow: gray 0px 10px 10px 15px;
-        display: inline-block;
-        align-items: center;
-    }
-    .dungeon {
-        margin: 0 auto;
-        background-image: url("./img/world/torre.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 30%;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0)0 10px 10px;
-    }
-    .dungeon:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .taver {
-        margin: 0 auto;
-        background-image: url("./img/world/tavern.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 15%;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0)0 10px 10px;
-        margin-top: 1%;
-    }
-    .taver:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .duel {
-        margin: 0 auto;
-        background-image: url("./img/world/duel.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 15%;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .duel:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .bag {
-        margin: 0 auto;
-        background-image: url("./img/itens/bag.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 15%;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .bag:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .friend-list {
-        margin: 0 auto;
-        background-image: url("./img/world/friend-list.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 15%;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .friend-list:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-}
-
-@media screen and (min-width: 1501px) and (max-width: 2001px) {
-    body {
-        text-align: left;
-    }
-    #title {
-        display: block;
-    }
-    .character {
-        display: block;
-    }
-    .taver {
-        width: 200px;
-        height: 200px;
-    }
-    h4 {
-        padding: 1%;
-        box-shadow: gray -6px 3px;
-        text-shadow: gray -3px 1px;
-        background-color: whitesmoke;
-        width: 450px;
-        max-height: 20px;
-        opacity: 0.5;
-        border-radius: 15px;
-        margin: 0 auto;
-        margin-top: 1%;
-    }
-    h4:active {
-        transform: scale(0.7);
-        transform: rotate(5deg);
-        opacity: 1;
-    }
-    .character-equipment {
-        height: 925px;
-        background-color: rgb(202, 202, 202);
-        border-radius: 15px;
-        box-shadow: rgb(129, 129, 129) 0 0 82px;
-        margin-left: 2%;
-        max-width: 800px;
-        display: flex;
-        position: relative;
-        margin-top: 1%;
-    }
-    .character-equipment:hover {
-        box-shadow: rgba(143, 0, 0, 0.781) 0 0 50px;
-        animation: fundo-vermelho 2s;
-        animation-iteration-count: infinite;
-    }
-    .equip-left {
-        height: 95%;
-        width: 25%;
-        background-color: rgb(212, 211, 211);
-        border-radius: 15px;
-        margin-left: 1%;
-        margin-top: 1%;
-        padding: 12px 11px 12px 12px;
-    }
-    .character-display {
-        width: 570px;
-        height: 95%;
-        margin-top: 2%;
-        border-radius: 15px;
-        margin-left: 2%;
-        background-color: rgb(160, 160, 160);
-    }
-    .character-img {
-        width: 98%;
-        height: 98%;
-        padding: 1% 1% 1% 1%;
-        border-radius: 15px;
-    }
-    .relic,
-    .head,
-    .body,
-    .arms,
-    .waist,
-    .boots {
-        transform-style: preserve-3d;
-        transform: perspective(9cm) rotateX(-5deg) rotateY(30deg);
-        padding: 4%;
-        height: 80px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: gray;
-        border-radius: 15px;
-        color: white;
-        opacity: 0.7;
-        display: flex;
-        box-shadow: -20px 8px rgba(14, 21, 47, 0.25);
-    }
-    .world {
-        display: inline;
-    }
-    .equip-right {
-        transform-style: preserve-3d;
-        display: inline-flex;
-        height: 400px;
-        width: 400px;
-        margin-top: -8%;
-        margin-left: 90%;
-        margin-inline: 5%;
-        float: inline-end;
-    }
-    .main-weapon {
-        height: 200px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: rgb(185, 185, 185);
-        border-radius: 25px;
-        color: white;
-        opacity: 0.9;
-        display: flex;
-        width: 50%;
-        margin-right: 5%;
-    }
-    .second-weapon {
-        height: 200px;
-        border: solid black 2px;
-        margin-top: 15%;
-        background-color: rgb(185, 185, 185);
-        border-radius: 25px;
-        color: white;
-        opacity: 0.9;
-        display: flex;
-        width: 50%;
-        margin-left: 5%;
-    }
-    .main-weapon:hover,
-    .second-weapon:hover {
-        transition: all 1s ease;
-        animation: fundo-vermelho 2s;
-        opacity: 1;
-        box-shadow: rgba(140, 5, 0, 0.781) 0 0 80px;
-    }
-    .main-weapon:hover {
-        transform: scale3d(2, 1.7, 0.1);
-        transition: all 1s ease-in;
-        margin-top: -10%;
-        z-index: 10;
-    }
-    .second-weapon:hover {
-        transform: scale3d(2, 1.7, 0.1);
-        transition: all 1s ease-in;
-        margin-top: -10%;
-        z-index: 10;
-    }
-    #weapon-slot,
-    #offhand-slot {
-        height: 200px;
-    }
-    .setItens {
-        position: relative;
-        width: 50%;
-        min-height: 650px;
-        background-color: rgb(187, 187, 187);
-        padding: 2%;
-        border-radius: 15px;
-        box-shadow: gray 0px 10px 10px 15px;
-        display: block;
-        float: left;
-        margin-top: 1%;
-    }
-    .dungeon {
-        margin: 0 auto;
-        background-image: url("./img/world/torre.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 200px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0)0 10px 10px;
-    }
-    .dungeon:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .taver {
-        margin: 0 auto;
-        background-image: url("./img/world/tavern.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 150px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0)0 10px 10px;
-        margin-top: 1%;
-    }
-    .taver:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .duel {
-        margin: 0 auto;
-        background-image: url("./img/world/duel.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 150px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .duel:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .bag {
-        margin: 0 auto;
-        background-image: url("./img/itens/bag.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 150px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .bag:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    .friend-list {
-        margin: 0 auto;
-        background-image: url("./img/world/friend-list.jpg");
-        background-size: cover;
-        background-position: center;
-        width: 80%;
-        height: 150px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        border: solid rgb(196, 196, 196) 4px;
-        color: white;
-        text-align: center;
-        overflow: hidden;
-        box-shadow: rgb(0, 0, 0) 0 10px 10px;
-        margin-top: 1%;
-    }
-    .friend-list:active {
-        transform: scale3d(0.7, 0.7, 1);
-    }
-    #weapon-slot,
-    #offhand-slot {
-        position: relative;
-    }
+.bagdiv {
+    display: none;
+    width: 500px;
+    height: auto;
+    position: absolute;
+    background-color: gray;
 }

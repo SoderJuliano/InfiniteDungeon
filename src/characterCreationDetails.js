@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./App.css";
 import { GiSwordsPower } from "react-icons/gi";
-import characterFirst from "./img/warriorpaint1.png";
+import characterFirst from "./img/weaponMaster.png";
 import characterSecond from "./img/paladin.png";
 import characterTird from "./img/tanker.png";
 import { GiSwordTie } from "react-icons/gi";
@@ -53,7 +53,7 @@ const Tela = () => {
 
     // função json com banckend
 
-    const loginJson = () => {
+    const setNewChar = () => {
 
         try {
             const recipeUrl = 'http://localhost:5000/newChar';
