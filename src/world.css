@@ -418,8 +418,48 @@
 
 .bagdiv {
     display: none;
-    width: 500px;
-    height: auto;
+    width: 300px;
+    height: 450px;
+    margin-left: 40%;
+    margin-top: -520px;
     position: absolute;
+    background-color: rgba(128, 128, 128, 0.24);
+    text-align: left;
+    padding: 2%;
+    border-radius: 25px;
+    border: solid black 2px;
+}
+
+.bagitem {
+    padding: 2%;
+}
+
+.bagitem:hover {
     background-color: gray;
+    border-radius: 25px;
+}
+
+#coins {
+    margin-bottom: 4%;
+}
+
+#optionItem {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    display: none;
+}
+
+#optionItem2 {
+    width: 100px;
+    height: 100px;
+    margin-left: -200px;
+    background-color: transparent;
+    display: none;
+}
+
+#storeB,
+#cancelB {
+    width: 80px;
+    padding: 2%;
 }

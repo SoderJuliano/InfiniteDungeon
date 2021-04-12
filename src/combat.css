@@ -1,21 +1,61 @@
-.char {
-    width: cover;
-    height: 70%;
+.characterbtfild {
+    width: 60px;
+    height: 70px;
     transform: scale3d(1, 1, 1) rotateX(-51deg) rotateZ(-30deg);
+    z-index: 9999;
+    display: flex;
 }
 
-.charTransition:hover {
+.charTransitionbattlefild:hover {
     transform: translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(43deg);
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 54px 54px 28px -10px rgba(34, 33, 81, 0.15);
 }
 
-.charTransition {
+.charTransitionbattlefild {
     width: 100px;
     height: 100px;
-    overflow: visible;
     transform: rotateX(51deg) rotateZ(43deg);
     transform-style: preserve-3d;
     border-radius: 32px;
     box-shadow: 1px 1px 0 1px #f9f9fb, -1px 0 28px 0 rgba(34, 33, 81, 0.01), 28px 28px 28px 0 rgba(34, 33, 81, 0.25);
     transition: .4s ease-in-out transform, .4s ease-in-out box-shadow;
+    align-content: center;
+    display: flex;
+}
+
+.battlefild {
+    background-image: radial-gradient(rgb(191, 192, 214), rgb(179, 181, 207), rgb(168, 170, 200), rgb(156, 158, 193), rgb(145, 147, 186), rgb(133, 136, 179), rgb(113, 115, 151), rgb(93, 94, 123), rgb(73, 73, 95), rgb(53, 52, 66), rgb(33, 31, 38), rgb(13, 10, 10));
+    width: 100%;
+    background-size: cover;
+    height: 900px;
+    padding: 10%;
+}
+
+.midle1 {
+    width: 50%;
+    padding: 1%;
+}
+
+.spellsline {
+    display: flex;
+    justify-content: space-around;
+    min-width: 400px;
+    width: 35%;
+    height: 50px;
+    margin-top: 20%;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+
+.spellitem {
+    border-radius: 49%;
+    background-color: blueviolet;
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    box-shadow: inset -10px -10px 10px #660, inset 3px 3px 5px #FFF;
+}
+
+.spellitem:active {
+    transform: scale(0.7);
 }
